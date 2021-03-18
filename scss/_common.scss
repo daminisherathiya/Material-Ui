@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+}
+
+.main-wrapper {
+    padding-top: $header-height;
+    margin-left: $sidebar-width-full;
+    .container-fluid {
+        padding: 25px;
+    }
+}
+
+.rounded {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #fafafa;
+    font-size: 20px;
+  }

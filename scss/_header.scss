@@ -1,0 +1,35 @@
+.top-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  .navbar {
+    padding: 0;
+    background-color: #0b70fb;
+    .navbar-header {
+      width: $sidebar-width-full;
+      .navbar-brand {
+        padding: 0;
+        line-height: $header-height;
+        margin-left: 16px;
+      }
+    }
+    i {
+      color: $white;
+    }
+    .navbar-collapse {
+      padding: $navbar-collapse-padding;
+
+      .navbar-nav {
+        .nav-item > .nav-link {
+          i {
+            font-size: 22px;
+          }
+          line-height: $header-height;
+          height: $header-height;
+          padding: $topbar-navlink-padding;
+        }
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,20 @@
+button {
+    text-transform: uppercase;
+    &.btn-danger,
+    &.btn-secondary,
+    &.btn-primary,
+    &.btn-info,
+    &.btn-warning,
+    &.btn-success
+    {
+        color: $white;
+        font-size: 14px;
+        &:hover,
+        &:focus,
+        &.disabled,
+        &:disabled,
+        &.active {
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./apexcharts-bundle/dist/apexcharts.css">
+    <title>Material-Ui Dashboard Free Bootstrap App - by Wrappixel</title>
+  </head>
+  <body>
+
+    <!-- Header start -->
+    <header class="top-navbar">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="d-block d-md-none sidebar-toggler" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <img src="./images/logo-light-icon.png" alt="">
+            </span>
+            <span class="logo-text">
+              <img src="./images/logo-light-text.png" alt="">
+            </span>
+          </a>
+        </div>
+
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class=" fas fa-ellipsis-h"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto toggle-minimize">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="mdi mdi-email"></i>
+                <div class="notify">
+                  <span class="point"></span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="mdi mdi-bell"></i>
+                <div class="notify">
+                  <span class="point"></span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-login-variant"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Left sidebar start-->
+    <aside class="left-sidebar">
+      <div class="scroll-sidebar">
+        <div class="user-profile">
+          <div class="profile-img">
+            <img class="img-fluid rounded-circle" src="./images/users/user_1.png" alt="">
+          </div>
+          <div class="profile-text dropdown">
+            <a class="dropdown-toggle text-white d-flex align-items-center justify-content-between" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Jonathan Deo</span> 
+              <i class="fas fa-angle-down "></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">My account</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav"> 
+          <ul>
+            <li class="sidebar-item">
+              <a href="index.html" class="sidebar-link active">
+                <i class="mdi mdi-home"></i>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="table.html" class="sidebar-link">
+                <i class="mdi mdi-table"></i>
+                <span class="hide-menu">Table</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="profile.html" class="sidebar-link">
+                <i class="mdi mdi-account-circle"></i>
+                <span class="hide-menu">Profile</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="chart.html" class="sidebar-link">
+                <i class="mdi mdi-chart-bar"></i>
+                <span class="hide-menu">Chart</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="error.html" class="sidebar-link">
+                <i class="mdi mdi-information-outline"></i>
+                <span class="hide-menu">Error</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-lock-open"></i>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex-grow-1"></div>
+        <div class="feature-box text-center">
+          <h4>Want More?</h4>
+          <p>Upgrade to PRO version to get tons of Feature</p>
+          <button class="btn btn-primary mt-3">Check Premium</button>
+        </div>
+      </div>
+    </aside>
+    <!-- left sidebar end -->
+
+    <div class="main-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="text-secondary">Total Profit</h6>
+                    <h3>$23500</h3>
+                  </div>
+                  <div class="rounded bg-pink rounded-circle text-center">P</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="text-secondary">Monthly Cost</h6>
+                    <h3>$3500</h3>
+                  </div>
+                  <div class="rounded bg-info rounded-circle text-center">M</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="text-secondary">Yearly Expense</h6>
+                    <h3>$63500</h3>
+                  </div>
+                  <div class="rounded bg-warning rounded-circle text-center">Y</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h6 class="text-secondary">Todays Production</h6>
+                    <h3>3600</h3>
+                  </div>
+                  <div class="rounded bg-success rounded-circle text-center">T</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Sales Overview</h4>
+                <p class="card-subtitle">Ample Admin Vs Pixel Admin</p>
+              </div>
+              <div class="card-body">
+                  <div id="sales-overview"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Visitors</h4>
+                <p class="card-subtitle">Different Devices Used to Visit</p>
+              </div>
+              <div class="card-body" style="height:359px;">
+                <div id="visitors"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="card contacts">
+              <div class="card-body">
+                <h4 class="card-title">Contacts</h4>
+                <p class="card-subtitle">List all contacts here</p>
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-info rounded-circle text-center">J</div>
+                  </div>
+                  <div>
+                    <h5>Johnathan Deo</h5>
+                    <h6 class="text-secondary">Web Designer</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-pink rounded-circle text-center">N</div>
+                  </div>
+                  <div>
+                    <h5>Nirav Joshi</h5>
+                    <h6 class="text-secondary">Fullstack Developer</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-warning rounded-circle text-center">G</div>
+                  </div>
+                  <div>
+                    <h5>Genelia Desouza</h5>
+                    <h6 class="text-secondary">Graphic Designer</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-success rounded-circle text-center">P</div>
+                  </div>
+                  <div>
+                    <h5>Johnathan Deo</h5>
+                    <h6 class="text-secondary">Web Designer</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-info rounded-circle text-center">J</div>
+                  </div>
+                  <div>
+                    <h5>Johnathan Deo</h5>
+                    <h6 class="text-secondary">Web Designer</h6>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <div class="rounded bg-pink rounded-circle text-center">N</div>
+                  </div>
+                  <div>
+                    <h5>Nirav Joshi</h5>
+                    <h6 class="text-secondary">Fullstack Developer</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-9">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Table Example</h4>
+                <p class="card-subtitle">this is subheader example</p>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive fs-6">
+                  <table class="table text-truncate">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </th>
+                        <th scope="col"><span class="fw-bold">ID</span></th>
+                        <th scope="col"><span class="fw-bold">First name</span></th>
+                        <th scope="col"><span class="fw-bold">Last name</span></th>
+                        <th scope="col"><span class="fw-bold">Age</span></th>
+                        <th scope="col"><span class="fw-bold">Full name</span></th>
+                        <th scope="col"><span class="fw-bold"></span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </td>
+                        <td><span class="fw-normal">1</span></td>
+                        <td><span class="fw-normal">Jon</span></td>
+                        <td><span class="fw-normal">Snow</span></td>
+                        <td><span class="fw-normal">35</span></td>
+                        <td><span class="fw-normal">Jon Snow</span></td>
+                        <td><span class="fw-normal"></span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </td>
+                        <td><span class="fw-normal">2</span></td>
+                        <td><span class="fw-normal">Cersei</span></td>
+                        <td><span class="fw-normal">Lannister</span></td>
+                        <td><span class="fw-normal">42</span></td>
+                        <td><span class="fw-normal">Cersei Lannister</span></td>
+                        <td><span class="fw-normal"></span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </td>
+                        <td><span class="fw-normal">3</span></td>
+                        <td><span class="fw-normal">Jaime</span></td>
+                        <td><span class="fw-normal">Lannister</span></td>
+                        <td><span class="fw-normal">45</span></td>
+                        <td><span class="fw-normal">Jaime Lannister</span></td>
+                        <td><span class="fw-normal"></span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </td>
+                        <td><span class="fw-normal">4</span></td>
+                        <td><span class="fw-normal">Arya</span></td>
+                        <td><span class="fw-normal">Stark</span></td>
+                        <td><span class="fw-normal">35</span></td>
+                        <td><span class="fw-normal">Arya Stark</span></td>
+                        <td><span class="fw-normal"></span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked"></label>
+                          </div>
+                        </td>
+                        <td><span class="fw-normal">5</span></td>
+                        <td><span class="fw-normal">Daenerys</span></td>
+                        <td><span class="fw-normal">Targaryen</span></td>
+                        <td><span class="fw-normal"></span></td>
+                        <td><span class="fw-normal">Daenerys Targaryen</span></td>
+                        <td><span class="fw-normal"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-end">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="mdi mdi-chevron-left"></i></span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="mdi mdi-chevron-right"></i></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="card img-box">
+              <div class="bg-img1"></div>
+              <div class="card-body border-bottom">
+                <h4 class="card-title mb-2">So Exited to watch</h4>
+                <p>We are going to learn different kinds of species in nature that live together to form amazing environment.</p>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card img-box">
+              <div class="bg-img2"></div>
+              <div class="card-body border-bottom">
+                <h4 class="card-title mb-2">So Exited to watch</h4>
+                <p>We are going to learn different kinds of species in nature that live together to form amazing environment.</p>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card img-box">
+              <div class="bg-img3"></div>
+              <div class="card-body border-bottom">
+                <h4 class="card-title mb-2">So Exited to watch</h4>
+                <p>We are going to learn different kinds of species in nature that live together to form amazing environment.</p>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card img-box">
+              <div class="bg-img4"></div>
+              <div class="card-body border-bottom">
+                <h4 class="card-title mb-2">So Exited to watch</h4>
+                <p>We are going to learn different kinds of species in nature that live together to form amazing environment.</p>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Required js file -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="./js/dashboard1.js"></script>
+    <script src="./js/custom.js"></script>
+    
+  </body>
+</html>
