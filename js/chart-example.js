@@ -45,7 +45,7 @@ var sales_overview_options = {
     theme: 'dark',
   },
   grid: {
-    show: false,
+    show: true,
     padding: {
         top: 0,
         right: 0,

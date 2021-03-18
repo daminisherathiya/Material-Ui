@@ -1,3 +1,7 @@
+// --------------------------------
+// Sales Overview
+// --------------------------------
+
 var sales_overview_options = {
     series: [{
     name: 'Ample',
@@ -45,7 +49,7 @@ var sales_overview_options = {
     theme: 'dark',
   },
   grid: {
-    show: false,
+    show: true,
     padding: {
         top: 0,
         right: 0,
@@ -58,13 +62,15 @@ var sales_overview_options = {
   sales_overview_chart.render();
 
 
-  // 
+// --------------------------------
+// Visitors
+// --------------------------------
 
   var visitors_options = {
     series: [50, 40, 30, 10],
     labels: ["Other", "Desktop", "Tablet", "Mobile"],
     chart: {
-    height: 250,
+    height: 355,
     type: 'donut',
     fontFamily: "Poppins, sans-serif",
     foreColor: "#98aab4",
@@ -92,8 +98,9 @@ var sales_overview_options = {
     pie: {
         donut: {
             size: '85%',
+            background: 'transparent',
             labels: {
-                show: false,
+                show: true,
                 name: {
                     show: true,
                     fontSize: '18px',
@@ -105,7 +112,7 @@ var sales_overview_options = {
                     color: "#98aab4",
                 },
                 total: {
-                    show: false,
+                    show: true,
                     label: 'Our Visitors',
                     color: '#98aab4',
                 }

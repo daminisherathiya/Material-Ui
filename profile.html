@@ -14,27 +14,29 @@
 <body>
   <!-- Header start -->
   <header class="top-navbar">
-    <nav class="navbar navbar-expand-md navbar-light">
-      <a class="d-block d-md-none sidebar-toggler" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+    <nav class="navbar navbar-expand navbar-light">
       <div class="navbar-header">
+
+        <!-- navbar logo -->
         <a class="navbar-brand" href="index.html">
           <span>
-            <img src="./images/logo-light-icon.png" alt="" />
+            <img src="./images/logo-light-icon.png" alt="light icon">
           </span>
           <span class="logo-text">
-            <img src="./images/logo-light-text.png" alt="" />
+            <img src="./images/logo-light-text.png" alt="light text">
           </span>
         </a>
       </div>
 
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="fas fa-ellipsis-h"></i>
+      <!-- collapse button -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class=" fas fa-ellipsis-h"></i>
       </button>
 
+      <!-- navbar items -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto toggle-minimize">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
           </li>
@@ -72,7 +74,7 @@
     <div class="scroll-sidebar">
       <div class="user-profile">
         <div class="profile-img">
-          <img class="img-fluid rounded-circle" src="./images/users/user_1.png" alt="" />
+          <img class="img-fluid rounded-circle" src="./images/users/user_1.png" alt="user 1" />
         </div>
         <div class="profile-text dropdown">
           <a class="dropdown-toggle text-white d-flex align-items-center justify-content-between" href="#" role="button"
@@ -142,9 +144,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-3">
+          <!-- User Profile Start -->
           <div class="card profile">
             <div class="card-body">
-              <div><img class="rounded-circle rounded" src="./images/users/user_1.png" alt=""></div>
+              <div><img class="rounded-circle rounded" src="./images/users/user_1.png" alt="user 1"></div>
               <h4 class="mb-0">Jonathan Deo</h4>
               <h6 class="fw-normal mb-0">Web Designer</h6>
             </div>
@@ -152,14 +155,17 @@
               <button class="btn btn-outline-danger w-100">Contact me</button>
             </div>
           </div>
+          <!-- User Profile End -->
         </div>
         <div class="col-xl-9">
+          <!-- Edit Profile Start -->
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">Edit Profile</h4>
               <p class="card-subtitle">change the setting you want</p>
             </div>
             <form>
+              <!-- First name -->
               <div class="profile-input">
                 <div class="form-floating">
                   <input type="first name" class="form-control" id="floatingInput" placeholder="First name"
@@ -167,12 +173,14 @@
                   <label for="floatingInput">First name*</label>
                 </div>
               </div>
+              <!-- Last name -->
               <div class="profile-input">
                 <div class="form-floating">
                   <input type="last name" class="form-control" id="floatingInput" placeholder="Last name" value="Deo">
                   <label for="floatingInput">Last name*</label>
                 </div>
               </div>
+              <!-- Email Address -->
               <div class="profile-input">
                 <div class="form-floating">
                   <input type="email" class="form-control" id="floatingInput" placeholder="Email Address"
@@ -180,6 +188,7 @@
                   <label for="floatingInput">Email Address*</label>
                 </div>
               </div>
+              <!-- Phone Number -->
               <div class="profile-input">
                 <div class="form-floating">
                   <input type="phone number" class="form-control" id="floatingInput" placeholder="Phone Number"
@@ -187,12 +196,14 @@
                   <label for="floatingInput">Phone Number*</label>
                 </div>
               </div>
+              <!-- Country -->
               <div class="profile-input">
                 <div class="form-floating">
                   <input type="country" class="form-control" id="floatingInput" placeholder="Country" value="India">
                   <label for="floatingInput">Country*</label>
                 </div>
               </div>
+              <!-- Select State -->
               <div class="profile-input">
                 <div class="form-floating">
                   <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
@@ -203,11 +214,13 @@
                   <label for="floatingInput">Select State*</label>
                 </div>
               </div>
+              <!-- Save Details Button -->
               <div class="profile-input">
                 <button class="btn btn-primary">Save details</button>
               </div>
             </form>
           </div>
+          <!-- Edit Profile End -->
         </div>
       </div>
     </div>

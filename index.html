@@ -12,26 +12,29 @@
   </head>
   <body>
 
-    <!-- Header start -->
+    <!-- Header Start -->
     <header class="top-navbar">
-      <nav class="navbar navbar-expand-md navbar-light">
-        <a class="d-block d-md-none sidebar-toggler" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+      <nav class="navbar navbar-expand navbar-light">
         <div class="navbar-header">
+
+          <!-- navbar logo -->
           <a class="navbar-brand" href="index.html">
             <span>
-              <img src="./images/logo-light-icon.png" alt="">
+              <img src="./images/logo-light-icon.png" alt="light icon">
             </span>
             <span class="logo-text">
-              <img src="./images/logo-light-text.png" alt="">
+              <img src="./images/logo-light-text.png" alt="light text">
             </span>
           </a>
         </div>
 
+        <!-- collapse button -->
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class=" fas fa-ellipsis-h"></i>
         </button>
 
+        <!-- navbar items -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto toggle-minimize">
             <li class="nav-item">
@@ -64,14 +67,14 @@
         </div>
       </nav>
     </header>
-    <!-- Header end -->
+    <!-- Header End -->
 
-    <!-- Left sidebar start-->
+    <!-- Left sidebar Start-->
     <aside class="left-sidebar">
       <div class="scroll-sidebar">
         <div class="user-profile">
           <div class="profile-img">
-            <img class="img-fluid rounded-circle" src="./images/users/user_1.png" alt="">
+            <img class="img-fluid rounded-circle" src="./images/users/user_1.png" alt="user 1">
           </div>
           <div class="profile-text dropdown">
             <a class="dropdown-toggle text-white d-flex align-items-center justify-content-between" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -134,12 +137,13 @@
         </div>
       </div>
     </aside>
-    <!-- left sidebar end -->
+    <!-- left sidebar End -->
 
     <div class="main-wrapper">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -152,7 +156,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -165,7 +170,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -178,7 +184,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -194,7 +201,8 @@
         </div>
 
         <div class="row">
-          <div class="col-xl-8">
+          <div class="col-lg-8">
+            <!-- Sales Overview Start -->
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Sales Overview</h4>
@@ -204,8 +212,10 @@
                   <div id="sales-overview"></div>
               </div>
             </div>
+            <!-- Sales Overview End -->
           </div>
-          <div class="col-xl-4">
+          <div class="col-lg-4">
+            <!-- Visitors Start -->
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Visitors</h4>
@@ -215,11 +225,13 @@
                 <div id="visitors"></div>
               </div>
             </div>
+            <!-- Visitors End -->
           </div>
         </div>
 
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-lg-3">
+            <!-- Contacts Start -->
             <div class="card contacts">
               <div class="card-body">
                 <h4 class="card-title">Contacts</h4>
@@ -282,9 +294,11 @@
                 </div>
               </div>
             </div>
+            <!-- Contacts End -->
           </div>
 
-          <div class="col-xl-9">
+          <div class="col-lg-9">
+            <!-- Table Example Start -->
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Table Example</h4>
@@ -293,6 +307,7 @@
               <div class="card-body">
                 <div class="table-responsive fs-6">
                   <table class="table text-truncate">
+                    <!-- Table Header Start-->
                     <thead>
                       <tr>
                         <th scope="col">
@@ -309,6 +324,9 @@
                         <th scope="col"><span class="fw-bold"></span></th>
                       </tr>
                     </thead>
+                     <!-- Table Header End-->
+
+                      <!-- Table Body Start-->
                     <tbody>
                       <tr>
                         <td scope="row">
@@ -381,7 +399,10 @@
                         <td><span class="fw-normal"></span></td>
                       </tr>
                     </tbody>
+                     <!-- Table Body End-->
                   </table>
+
+                  <!-- Pagination Start -->
                   <div class="d-flex justify-content-end">
                     <nav aria-label="Page navigation example">
                       <ul class="pagination">
@@ -401,14 +422,17 @@
                       </ul>
                     </nav>
                   </div>
+                  <!-- Pagination End -->
                 </div>
               </div>
             </div>
+            <!-- Table Example End -->
           </div>
         </div>
 
         <div class="row">
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card img-box">
               <div class="bg-img1"></div>
               <div class="card-body border-bottom">
@@ -417,15 +441,16 @@
               </div>
               <div class="card-body">
                 <div class="d-flex">
-                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt="user 2"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt="user 3"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt="user 4"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt="user 5"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card img-box">
               <div class="bg-img2"></div>
               <div class="card-body border-bottom">
@@ -434,15 +459,16 @@
               </div>
               <div class="card-body">
                 <div class="d-flex">
-                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt="user 2"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt="user 3"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt="user 4"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt="user 5"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card img-box">
               <div class="bg-img3"></div>
               <div class="card-body border-bottom">
@@ -451,15 +477,16 @@
               </div>
               <div class="card-body">
                 <div class="d-flex">
-                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt="user 2"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt="user 3"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt="user 4"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt="user 5"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <!-- column -->
+          <div class="col-lg-3 col-sm-6">
             <div class="card img-box">
               <div class="bg-img4"></div>
               <div class="card-body border-bottom">
@@ -468,10 +495,10 @@
               </div>
               <div class="card-body">
                 <div class="d-flex">
-                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt=""></div>
-                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt=""></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_2.jpg" alt="user 2"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_3.jpg" alt="user 3"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_4.jpg" alt="user 4"></div>
+                  <div><img class="rounded rounded-circle" src="./images/users/user_5.jpg" alt="user 5"></div>
                 </div>
               </div>
             </div>
