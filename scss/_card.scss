@@ -88,30 +88,6 @@
     p {
         font-size: 12px;
     }
-    .bg-img1 {
-        height: 250px;
-        background: url(../images/backgrounds/u1.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .bg-img2 {
-        height: 250px;
-        background: url(../images/backgrounds/u2.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .bg-img3 {
-        height: 250px;
-        background: url(../images/backgrounds/u3.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .bg-img4{
-        height: 250px;
-        background: url(../images/backgrounds/u4.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
     .rounded {
         width: 36px;
         height: 36px;
@@ -132,9 +108,7 @@
         font-size: 15px;
         padding: 9px 21px;
         &:hover {
-            background-color: #f64e600a;
-            color: $red;
-            border-color: $red;
+            color: $white;
         }
     }
 }
