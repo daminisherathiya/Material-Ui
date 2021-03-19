@@ -7,6 +7,9 @@
     background-color: $blue;
     .navbar-header {
       width: $sidebar-width-full;
+      // @include media-breakpoint-down(xl) {
+      //   width:50px;
+      // }
       .navbar-brand {
         padding: 0;
         line-height: $header-height;

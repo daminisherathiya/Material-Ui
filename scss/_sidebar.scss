@@ -7,6 +7,10 @@
     overflow: auto;
     z-index: 50;
     box-shadow: 1px 0px 20px rgba(0,0,0,0.08);
+    // left: 0;
+    // @include media-breakpoint-down(xl) {
+    //     left: -240px;
+    // }
     &.small-sidebar {
         left: -240px;
         & + .main-wrapper {

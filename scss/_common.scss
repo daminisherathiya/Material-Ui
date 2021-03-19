@@ -4,7 +4,8 @@ a {
 
 .main-wrapper {
     padding-top: $header-height;
-    @include media-breakpoint-up(lg) {
+    // margin-left: 0;
+    @include media-breakpoint-up(xl) {
         margin-left: $sidebar-width-full;
     }
     .container-fluid {
